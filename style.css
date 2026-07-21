@@ -1,0 +1,198 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0d1117;
+    color:#fff;
+    line-height:1.6;
+}
+
+/* Navigation */
+
+nav{
+    position:sticky;
+    top:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#161b22;
+    box-shadow:0 3px 10px rgba(0,0,0,.3);
+    z-index:100;
+}
+
+.logo{
+    font-size:26px;
+    font-weight:700;
+    color:#58a6ff;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#58a6ff;
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:90px 20px;
+}
+
+.profile{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid #58a6ff;
+    object-fit:cover;
+    margin-bottom:25px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.hero h2{
+    color:#58a6ff;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 35px;
+    background:#238636;
+    color:white;
+    border-radius:30px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+/* Sections */
+
+section{
+    padding:80px 10%;
+}
+
+section h2{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:40px;
+    color:#58a6ff;
+}
+
+/* Skills */
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.skills span{
+    background:#21262d;
+    padding:12px 20px;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.skills span:hover{
+    background:#58a6ff;
+}
+
+/* Projects */
+
+.project{
+    background:#161b22;
+    margin-bottom:25px;
+    padding:25px;
+    border-radius:12px;
+    transition:.3s;
+    border-left:5px solid #58a6ff;
+}
+
+.project:hover{
+    transform:translateY(-8px);
+}
+
+/* Contact */
+
+#contact p{
+    text-align:center;
+    margin:15px;
+}
+
+#contact a{
+    color:#58a6ff;
+    text-decoration:none;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:#161b22;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:15px;
+}
+
+nav ul li{
+    margin:10px;
+}
+
+.hero h1{
+    font-size:34px;
+}
+
+section{
+    padding:60px 7%;
+}
+
+}
