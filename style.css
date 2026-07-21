@@ -315,3 +315,72 @@ section{
     padding:15px;
     color:#c9d1d9;
 }
+/* ================= Certificates ================= */
+
+#certificates{
+    padding:80px 10%;
+    background:#0d1117;
+}
+
+#certificates h2{
+    text-align:center;
+    color:#58a6ff;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.certificate-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.certificate-card{
+    background:#161b22;
+    border-radius:15px;
+    text-align:center;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
+    transition:.4s;
+}
+
+.certificate-card:hover{
+    transform:translateY(-10px);
+}
+
+.certificate-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.certificate-card h3{
+    color:#58a6ff;
+    margin-top:20px;
+}
+
+.certificate-card p{
+    color:#c9d1d9;
+    margin:10px;
+}
+
+.pdf-icon{
+    font-size:100px;
+    color:#ff4d4d;
+    margin-top:40px;
+}
+
+.view-btn{
+    display:inline-block;
+    margin:20px;
+    padding:12px 25px;
+    background:#238636;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.view-btn:hover{
+    background:#2ea043;
+}
